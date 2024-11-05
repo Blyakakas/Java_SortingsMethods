@@ -8,9 +8,6 @@ import static com.tema.UsableMethods.partition;
 
 public class SortingMethods
 {
-
-
-
     public  static void quickSort(int[] arr, int low, int high)
     {
         if(low < high)
