@@ -2,11 +2,8 @@ package com.tema;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
 
 import static com.tema.UsableMethods.swap;
-import static com.tema.UsableMethods.changeArraySize;
 import static com.tema.UsableMethods.partition;
 
 public class SortingMethods
@@ -38,16 +35,21 @@ public class SortingMethods
         }
     }
 
-    public static void selectionSort(int[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
+    public static void selectionSort(int[] arr)
+    {
+        for (int i = 0; i < arr.length - 1; i++)
+        {
             int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[minIndex]) {
+            for (int j = i + 1; j < arr.length; j++)
+            {
+                if (arr[j] < arr[minIndex])
+                {
                     minIndex = j;
                 }
             }
 
-            if (minIndex != i) {
+            if (minIndex != i)
+            {
                 swap(arr,i,minIndex);
             }
         }
